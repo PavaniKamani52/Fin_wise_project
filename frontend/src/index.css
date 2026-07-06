@@ -30,7 +30,7 @@
   --color-border-info:    #BAE6FD;
   --color-border-warning: #FDE68A;
 
-  --font-heading: "Fraunces", Georgia, serif;
+  --font-heading: "Manrope", "Inter", system-ui, sans-serif;
   --font-body:    "Inter", system-ui, sans-serif;
 
   --radius-sm:  4px;
@@ -56,6 +56,7 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -68,7 +69,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   line-height: 1.25;
-  font-weight: 400; /* Fraunces looks best at regular weight, not bold */
+  font-weight: 700;
 }
 
 /* Prevent Inter from being too thin at small sizes */
@@ -199,11 +200,42 @@ p, span, li, label, input, button {
   box-shadow: inset 0 1px 1px rgba(37,99,235,0.01), 0 1px 2px rgba(37,99,235,0.04);
 }
 
+/* ── Desktop Header Link styles ────────────────────────────── */
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 12px;
+  color: var(--color-muted);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  position: relative;
+}
+.header-link:hover {
+  color: var(--color-ink);
+}
+.header-link.active {
+  color: var(--color-amber);
+}
+.header-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background-color: var(--color-amber);
+  border-radius: 1px;
+}
+
 /* ── Page layout helpers ───────────────────────────────────── */
 .page-title {
   font-family: var(--font-heading);
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--color-ink);
   letter-spacing: -0.01em;
 }
@@ -468,4 +500,30 @@ p, span, li, label, input, button {
 /* ── Prevent horizontal overflow on the whole app ────────── */
 body {
   overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* ── Mobile bottom nav: always fill viewport width exactly ── */
+/* Ensures NavLink flex children never exceed viewport */
+nav[style*="position: fixed"] {
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+nav[style*="position: fixed"] a {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* ── Workspace action buttons: wrap on small screens ─────── */
+@media (max-width: 600px) {
+  .letter-actions {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+  .letter-actions > * {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+  }
 }

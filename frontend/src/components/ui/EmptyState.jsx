@@ -47,7 +47,7 @@ export default function EmptyState({
         style={{
           fontFamily: 'var(--font-heading)',
           fontSize: '1.25rem',
-          fontWeight: 400,
+          fontWeight: 700,
           color: 'var(--color-ink)',
           marginBottom: 8,
         }}

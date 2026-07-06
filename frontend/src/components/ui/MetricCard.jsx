@@ -48,7 +48,7 @@ export default function MetricCard({
         style={{
           fontFamily: 'var(--font-heading)',
           fontSize: '1.75rem',
-          fontWeight: 400,
+          fontWeight: 700,
           color: accent ? 'white' : 'var(--color-ink)',
           lineHeight: 1.1,
           letterSpacing: '-0.02em',

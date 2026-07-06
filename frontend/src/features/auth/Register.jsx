@@ -59,7 +59,7 @@ export default function Register() {
       <div style={{ width: '100%', maxWidth: 420 }} className="fade-in">
         {/* Brand */}
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 32 }}>
-          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.25rem', fontWeight: 400 }}>
+          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.25rem', fontWeight: 700 }}>
             FinWise
           </span>
           <span style={{ fontSize: '0.6875rem', fontWeight: 700, color: 'var(--color-amber)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
@@ -71,7 +71,7 @@ export default function Register() {
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: '1.75rem',
-            fontWeight: 400,
+            fontWeight: 700,
             color: 'var(--color-ink)',
             marginBottom: 6,
             letterSpacing: '-0.01em',

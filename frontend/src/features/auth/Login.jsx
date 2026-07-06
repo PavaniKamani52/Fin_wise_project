@@ -25,7 +25,7 @@ function AuthSidebar() {
             style={{
               fontFamily: 'var(--font-heading)',
               fontSize: '1.5rem',
-              fontWeight: 400,
+              fontWeight: 700,
               letterSpacing: '-0.01em',
             }}
           >
@@ -49,7 +49,7 @@ function AuthSidebar() {
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: '2.25rem',
-            fontWeight: 300,
+            fontWeight: 700,
             lineHeight: 1.2,
             color: 'white',
             marginBottom: 20,
@@ -178,7 +178,7 @@ export default function Login() {
         <div style={{ width: '100%', maxWidth: 400 }} className="fade-in">
           {/* Mobile brand (visible only on small screens) */}
           <div className="flex md:hidden items-baseline gap-2 mb-8">
-            <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.25rem', fontWeight: 400 }}>
+            <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.25rem', fontWeight: 700 }}>
               FinWise
             </span>
             <span style={{ fontSize: '0.6875rem', fontWeight: 700, color: 'var(--color-amber)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
@@ -190,7 +190,7 @@ export default function Login() {
             style={{
               fontFamily: 'var(--font-heading)',
               fontSize: '1.75rem',
-              fontWeight: 400,
+              fontWeight: 700,
               color: 'var(--color-ink)',
               marginBottom: 6,
               letterSpacing: '-0.01em',

@@ -77,7 +77,7 @@ export default function Modal({ isOpen, onClose, title, children }) {
             style={{
               fontFamily: 'var(--font-heading)',
               fontSize: '1.125rem',
-              fontWeight: 400,
+              fontWeight: 600,
               color: 'var(--color-ink)',
             }}
           >
