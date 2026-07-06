@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+psycopg2-binary
+bcrypt
+python-jose[cryptography]
+python-multipart
+email-validator
+pydantic[email]
+google-genai
+reportlab
+python-dotenv
+slowapi
+pytest
+httpx

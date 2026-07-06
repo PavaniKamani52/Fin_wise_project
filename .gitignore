@@ -1,0 +1,43 @@
+# Secrets & environment
+.env
+.env.*
+!.env.example
+
+# Python cache & build outputs
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.eggs/
+.pytest_cache/
+coverage/
+htmlcov/
+
+# Local databases
+test_finrelief.db
+finrelief.db
+*.sqlite
+*.db
+*.sqlite3
+
+# Node modules & frontend builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
